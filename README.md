@@ -1,10 +1,6 @@
 # francescalily.github.io
 
 
-My extremely messy wesbite (in terms of code ... and functionailty).
+My updated portfolio website - made using javascript, html, p5.js, css and vite.
 
-Aware there is a lot wrong with it and can remove a lot of code, however, theres no fun in forgetting the development.
-
-Not really accessible on phone either, but we'll get there.
-
-:-----)
+It is now easier to navigate to different types of work and contact directly or through a platform.

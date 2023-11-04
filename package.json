@@ -1,0 +1,19 @@
+{
+  "name": "francescalily.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sketch.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gsap": "^3.5.1",
+    "lil-gui": "^0.18.2",
+    "three": "^0.157.0",
+    "vite": "^4.4.11"
+  }
+}
