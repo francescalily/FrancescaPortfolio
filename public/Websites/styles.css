@@ -186,7 +186,7 @@ img {
   height: auto;
 }
 
-.see-more-button,
+.demo-button,
 .code-button {
   align-items: center;
   background-color: #fff;
@@ -198,7 +198,7 @@ img {
   display: inline-flex;
   flex: 1 1 auto;
   font-family: Inter, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
   justify-content: center;
   line-height: 1;
@@ -215,7 +215,7 @@ img {
   touch-action: manipulation;
 }
 
-.see-more-button:hover,
+.demo-button:hover,
 .code-button:hover {
   box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
 }
@@ -230,6 +230,10 @@ img {
   width: 350px;
   margin-left: 40px;
   margin-right: 40px;
+}
+
+p {
+  color: #292c38;
 }
 
 .footer {
