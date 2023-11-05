@@ -1,8 +1,13 @@
+import imageOne from "../assets/websites/h20.jpeg";
+import imageTwo from "../assets/websites/ny.jpg";
+import imageThree from "../assets/websites/facegen.png";
+import imageFour from "../assets/websites/textureOne.png";
+
 const images = [
-  "url(../assets/websites/h20.jpeg)",
-  "url(../assets/websites/ny.jpg)",
-  "url(../assets/websites/facegen.png)",
-  "url(../assets/websites/textureOne.png)",
+  `url(${imageOne})`,
+  `url(${imageTwo})`,
+  `url(${imageThree})`,
+  `url(${imageFour})`,
 ];
 
 let currentIndex = 0;
