@@ -1,6 +1,6 @@
 export function sketch(p) {
   let cols, rows;
-  const scl = 15;
+  const scl = 10;
   let w, h;
   let terrain = [];
   let video;
@@ -19,7 +19,7 @@ export function sketch(p) {
     for (let x = 0; x < cols; x++) {
       terrain[x] = [];
       for (let y = 0; y < rows; y++) {
-        terrain[x][y] = 0; // Initialize with zero
+        terrain[x][y] = 0;
       }
     }
   };
@@ -49,12 +49,12 @@ export function sketch(p) {
       yOffset += 0.1;
     }
 
-    p.translate(-w / 2, -h / 10);
+    p.translate(-w / 2, -h / 4, -150);
     p.rotateX(p.map(p.mouseY, 0, p.height, p.PI / 2, -p.PI / 8));
     p.noFill();
     p.stroke(0);
 
-    for (let y = 0; y < rows - 1; y++) {
+    for (let y = 0; y < rows; y++) {
       p.beginShape(p.TRIANGLE_STRIP);
       for (let x = 0; x < cols; x++) {
         p.vertex(x * scl, y * scl, terrain[x][y]);
