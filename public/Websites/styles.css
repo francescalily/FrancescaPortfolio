@@ -186,7 +186,8 @@ img {
   height: auto;
 }
 
-.see-more-button {
+.see-more-button,
+.code-button {
   align-items: center;
   background-color: #fff;
   border-radius: 12px;
@@ -214,8 +215,15 @@ img {
   touch-action: manipulation;
 }
 
-.see-more-button:hover {
+.see-more-button:hover,
+.code-button:hover {
   box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+
+.buttons-container {
+  display: flex; /* Use flexbox to align children inline */
+  justify-content: center; /* Center the buttons horizontally */
+  align-items: center; /* Center the buttons vertically */
 }
 
 .footer {
