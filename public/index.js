@@ -27,7 +27,7 @@ export function sketch(p) {
   p.draw = function () {
     console.log("draw called");
     video.size(w / scl, h / scl);
-    p.background(0);
+    p.background(255);
 
     video.loadPixels();
     shift -= 0.03;
