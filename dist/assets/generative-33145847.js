@@ -1,1 +1,0 @@
-import"./modulepreload-polyfill-3cfb730f.js";const e=["url(../assets/static/h20.jpeg)","url(../assets/static/ny.jpg)","url(../assets/static/facegen.png)","url(../assets/static/textureOne.png)"];let t=0;const n=document.getElementById("imageContainer");function s(){n.style.backgroundImage=e[t],t=(t+1)%e.length}s();setInterval(s,2e3);

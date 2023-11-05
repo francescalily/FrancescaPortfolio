@@ -1,8 +1,8 @@
 const images = [
-  "url(../assets/static/h20.jpeg)",
-  "url(../assets/static/ny.jpg)",
-  "url(../assets/static/facegen.png)",
-  "url(../assets/static/textureOne.png)",
+  "url(../assets/websites/h20.jpeg)",
+  "url(../assets/websites/ny.jpg)",
+  "url(../assets/websites/facegen.png)",
+  "url(../assets/websites/textureOne.png)",
 ];
 
 let currentIndex = 0;
