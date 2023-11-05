@@ -49,7 +49,7 @@ export function sketch(p) {
       yOffset += 0.1;
     }
 
-    p.translate(-w / 2, -h / 4, -150);
+    p.translate(-w / 2, -h / 3, -200);
     p.rotateX(p.map(p.mouseY, 0, p.height, p.PI / 2, -p.PI / 8));
     p.noFill();
     p.stroke(0);
