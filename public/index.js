@@ -54,7 +54,7 @@ export function sketch(p) {
     p.noFill();
     p.stroke(0);
 
-    for (let y = 0; y < rows; y++) {
+    for (let y = 0; y < rows - 2; y++) {
       p.beginShape(p.TRIANGLE_STRIP);
       for (let x = 0; x < cols; x++) {
         p.vertex(x * scl, y * scl, terrain[x][y]);
@@ -66,10 +66,10 @@ export function sketch(p) {
 
   p.windowResized = function () {
     p.resizeCanvas(p.windowWidth, p.windowHeight);
-    w = p.windowWidth; // Update w to the new window width
-    h = p.windowHeight; // Update h to the new window height
+    w = p.windowWidth + scl; // Keep consistent with setup logic
+    h = p.windowHeight;
     cols = w / scl; // Recalculate the number of columns
-    rows = h / scl; // Recalculate the number of rows
-    video.size(cols, rows);
+    rows = h / scl + 1; // Keep consistent with setup logic
+    video.size(w / scl, h / scl);
   };
 }
