@@ -150,7 +150,12 @@ section:nth-child(odd) {
   justify-content: flex-end;
 }
 
-a {
+.contact-links {
   text-decoration: none;
   color: black;
+  cursor: crosshair;
+}
+
+h2 {
+  cursor: crosshair;
 }

@@ -137,6 +137,10 @@ body {
   body {
     overflow: hidden;
   }
+
+  .navbar a {
+    font-size: 12px;
+  }
 }
 
 .content-section {

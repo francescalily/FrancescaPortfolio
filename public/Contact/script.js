@@ -7,21 +7,21 @@ THREE.ColorManagement.enabled = false;
 /**
  * Debug
  */
-const gui = new dat.GUI();
+// const gui = new dat.GUI();
 
 const parameters = {
   materialColor: "#ffeded",
   wireframe: true,
 };
 
-gui.addColor(parameters, "materialColor").onChange(() => {
-  material.color.set(parameters.materialColor);
-  particlesMaterial.color.set(parameters.materialColor);
-});
+// gui.addColor(parameters, "materialColor").onChange(() => {
+//   material.color.set(parameters.materialColor);
+//   particlesMaterial.color.set(parameters.materialColor);
+// });
 
-gui.add(parameters, "wireframe").onChange(() => {
-  material.wireframe = parameters.wireframe;
-});
+// gui.add(parameters, "wireframe").onChange(() => {
+//   material.wireframe = parameters.wireframe;
+// });
 
 /**
  * Base
@@ -84,7 +84,7 @@ const mesh3 = new THREE.Mesh(
 );
 
 mesh1.position.y = -objectsDistance * 0;
-mesh2.position.y = -objectsDistance * 1;
+mesh2.position.y = -objectsDistance * 0.6;
 mesh1.position.y = -objectsDistance * 2;
 
 mesh1.position.x = -1.7;
