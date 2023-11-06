@@ -11,11 +11,16 @@ const gui = new dat.GUI();
 
 const parameters = {
   materialColor: "#ffeded",
+  wireframe: false,
 };
 
 gui.addColor(parameters, "materialColor").onChange(() => {
   material.color.set(parameters.materialColor);
   particlesMaterial.color.set(parameters.materialColor);
+});
+
+gui.add(parameters, "wireframe").onChange(() => {
+  material.wireframe = parameters.wireframe;
 });
 
 /**
