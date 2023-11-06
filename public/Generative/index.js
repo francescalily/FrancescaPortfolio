@@ -1,6 +1,6 @@
 import imageOne from "../assets/websites/facegen.png";
 import imageTwo from "../assets/websites/terrain.png";
-import imageThree from "../assets/websites/mouse.png";
+import imageThree from "../assets/websites/ant.png";
 import imageFour from "../assets/websites/textureOne.png";
 
 const images = [
