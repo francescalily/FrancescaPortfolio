@@ -11,7 +11,7 @@ const gui = new dat.GUI();
 
 const parameters = {
   materialColor: "#ffeded",
-  wireframe: false,
+  wireframe: true,
 };
 
 gui.addColor(parameters, "materialColor").onChange(() => {
@@ -69,6 +69,7 @@ const boxMaterial = new THREE.MeshBasicMaterial({ map: boxTexture });
 const material = new THREE.MeshToonMaterial({
   color: parameters.materialColor,
   gradientMap: gradientTexture,
+  wireframe: parameters.wireframe,
 });
 
 const objectsDistance = 4;
