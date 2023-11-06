@@ -54,7 +54,7 @@ export function sketch(p) {
     p.noFill();
     p.stroke(0);
 
-    for (let y = 0; y < rows - 2; y++) {
+    for (let y = 0; y < rows - 3; y++) {
       p.beginShape(p.TRIANGLE_STRIP);
       for (let x = 0; x < cols; x++) {
         p.vertex(x * scl, y * scl, terrain[x][y]);
