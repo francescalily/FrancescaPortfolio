@@ -77,6 +77,19 @@ body {
   display: block;
 }
 
+@media screen and (max-width: 520px) {
+  body {
+    overflow: hidden;
+  }
+
+  .navbar a,
+  .dropdown .dropbtn {
+    font-size: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 canvas {
   display: block;
 }
@@ -131,16 +144,6 @@ body {
 .instagram-button:hover {
   width: 300px;
   scroll-behavior: smooth;
-}
-
-@media screen and (max-width: 520px) {
-  body {
-    overflow: hidden;
-  }
-
-  .navbar a {
-    font-size: 12px;
-  }
 }
 
 .content-section {
