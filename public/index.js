@@ -7,7 +7,7 @@ export function sketch(p) {
   let shift = 0;
 
   p.setup = function () {
-    console.log("setup called");
+    console.log("Setup test");
     p.createCanvas(p.windowWidth, p.windowHeight, p.WEBGL);
     w = p.width + scl;
     h = p.height;
@@ -25,7 +25,7 @@ export function sketch(p) {
   };
 
   p.draw = function () {
-    console.log("draw called");
+    console.log("Draw test");
     video.size(w / scl, h / scl);
     p.background(255);
 
@@ -66,10 +66,10 @@ export function sketch(p) {
 
   p.windowResized = function () {
     p.resizeCanvas(p.windowWidth, p.windowHeight);
-    w = p.windowWidth + scl; // Keep consistent with setup logic
+    w = p.windowWidth + scl;
     h = p.windowHeight;
-    cols = w / scl; // Recalculate the number of columns
-    rows = h / scl + 1; // Keep consistent with setup logic
+    cols = w / scl;
+    rows = h / scl + 1;
     video.size(w / scl, h / scl);
   };
 }
