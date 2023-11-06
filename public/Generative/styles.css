@@ -102,6 +102,12 @@ body {
   body {
     overflow: hidden;
   }
+  .navbar a,
+  .dropdown .dropbtn {
+    font-size: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .content-section {
