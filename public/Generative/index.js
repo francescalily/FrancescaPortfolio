@@ -10,6 +10,11 @@ const images = [
   `url(${imageFour})`,
 ];
 
+images.forEach((imageUrl) => {
+  const img = new Image();
+  img.src = imageUrl.replace('url("', "").replace('")', "");
+});
+
 let currentIndex = 0;
 const imageContainer = document.getElementById("imageContainer");
 
